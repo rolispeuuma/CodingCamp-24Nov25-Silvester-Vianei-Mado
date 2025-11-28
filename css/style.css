@@ -75,3 +75,9 @@ td {
   margin-bottom: 4px;
   float: right;
 }
+#FilterText {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #939393;
+  border-radius: 4px;
+}
