@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="cointainer">
-      <h3>To Do List</h3>
-      <form>
+    <div class="container">
+      <h2>To Do List</h2>
+
+      <!-- Membuat Form -->
+      <form id="form-tugas">
         <input
           type="text"
           id="namatugas"
@@ -24,13 +26,14 @@
         />
         <input type="date" id="tanggaltugas" required />
         <select id="status" required>
-          <option value="" disabled selected>Pilih Prioritas</option>
+          <option value="" disabled selected>Pilih Status</option>
           <option value="bs">Belum Selesai</option>
           <option value="p">Proses</option>
           <option value="s">Selesai</option>
         </select>
         <button type="submit" id="tambah">Tambah Tugas</button>
       </form>
+      <!--  -->
     </div>
 
     <script src="js/script.js"></script>
