@@ -31,9 +31,23 @@
           <option value="p">Proses</option>
           <option value="s">Selesai</option>
         </select>
-        <button type="submit" id="tambah">Tambah Tugas</button>
+        <button type="submit" id="tambah">Tambah</button>
       </form>
       <!--  -->
+
+      <!-- Membuat Tabel Untuk menampilkan Daftar Tugas -->
+      <table id="tabel-tugas">
+        <thead>
+          <tr>
+            <th>Nama Tugas</th>
+            <th>Deskripsi</th>
+            <th>Tanggal</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
     </div>
 
     <script src="js/script.js"></script>
