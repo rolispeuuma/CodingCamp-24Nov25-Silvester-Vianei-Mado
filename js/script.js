@@ -70,3 +70,18 @@ document.getElementById("hapus-semua").addEventListener("click", function () {
     document.getElementById("tbody").innerHTML = "";
   }
 });
+// Filter tugas
+document.getElementById("filterInput").addEventListener("keyup", function () {
+  let filter = this.value.toLowerCase();
+  let rows = document.querySelectorAll("#tbody tr");
+
+  rows.forEach((row) => {
+    let text = row.textContent.toLowerCase();
+
+    if (text.includes(filter)) {
+      row.style.display = "";
+    } else {
+      row.style.display = "none";
+    }
+  });
+});
