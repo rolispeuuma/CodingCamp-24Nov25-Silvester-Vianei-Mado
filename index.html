@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="cointainer">
+      <h3>To Do List</h3>
+      <form>
+        <input
+          type="text"
+          id="namatugas"
+          placeholder="Masukan Nama Tugas"
+          required
+        />
+        <input
+          type="text"
+          id="deskripsitugas"
+          placeholder="Deskripsi"
+          required
+        />
+        <input type="date" id="tanggaltugas" required />
+        <select id="status" required>
+          <option value="" disabled selected>Pilih Prioritas</option>
+          <option value="bs">Belum Selesai</option>
+          <option value="p">Proses</option>
+          <option value="s">Selesai</option>
+        </select>
+        <button type="submit" id="tambah">Tambah Tugas</button>
+      </form>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
