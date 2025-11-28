@@ -71,7 +71,7 @@ document.getElementById("hapus-semua").addEventListener("click", function () {
   }
 });
 // Filter tugas
-document.getElementById("filterInput").addEventListener("keyup", function () {
+document.getElementById("filterText").addEventListener("keyup", function () {
   let filter = this.value.toLowerCase();
   let rows = document.querySelectorAll("#tbody tr");
 
