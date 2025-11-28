@@ -75,6 +75,9 @@ td {
   margin-bottom: 4px;
   float: right;
 }
+#hapus-semua:hover {
+  background-color: #750505;
+}
 #FilterText {
   flex: 1;
   padding: 8px;

@@ -64,3 +64,9 @@ form.addEventListener("submit", function (e) {
     tr.remove();
   });
 });
+document.getElementById("hapus-semua").addEventListener("click", function () {
+  let konfirmasi = confirm("Yakin ingin menghapus semua data?");
+  if (konfirmasi) {
+    document.getElementById("tbody").innerHTML = "";
+  }
+});
